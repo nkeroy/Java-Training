@@ -2,7 +2,7 @@
 Java Training
 
 List of files to take note:
-Lab 2.1 PersonDetails.java\n
+Lab 2.1 PersonDetails.java>
 Lab 2.2 CheckNumber.java\n
 Lab 3.1 StringOperations.java\n
 Lab 3.3 Duration.java\n
