@@ -7,8 +7,8 @@ import java.util.Random;
 // to print pounds, "\u00A3"
 
 class Person {
-	String name;
-	float age;
+	private String name;
+	private float age;
 	
 	public Person(String name, float age) {
 		this.name = name;
@@ -30,9 +30,9 @@ class Person {
 
 class Account {
 	Random r = new Random();
-	long accNum;
-	double balance;
-	Person accHolder;
+	private long accNum;
+	private double balance;
+	private Person accHolder;
 	
 	public Account (double b, Person ah) {
 		this.accNum = r.nextLong();
@@ -59,6 +59,14 @@ class Account {
 	public Person getAccHolder() {
 		return this.accHolder;
 	}
+	
+	public void setBalance(double amount) {
+		this.balance = amount;
+	}
+	@Override
+	public String toString() {
+		return "You have " + this.balance + " in your account";
+	}
 }
 
 class SavingsAccount extends Account {
@@ -71,10 +79,10 @@ class SavingsAccount extends Account {
 	
 	
 	public void withdraw(double amount) {
-		if (this.balance - amount < minimumBalance) {
+		if (this.getBalance() - amount < minimumBalance) {
 			log.warn("Cannot withdraw until below Minimum Balance");
 		} else {
-			this.balance -= amount;
+			super.withdraw(amount);
 		}
 	}
 }
@@ -92,20 +100,20 @@ class CurrentAccount extends Account {
 		if (this.overdraftRecord >= this.overdraftLimit) {
 			log.warn("Cannot withdraw due to overdraftLimit reached");
 		} else {
-			if (amount > this.balance) {
-				if (amount - this.balance + overdraftRecord > this.overdraftLimit) {
-					this.balance = 0;
+			if (amount > this.getBalance()) {
+				if (amount - this.getBalance() + overdraftRecord > this.overdraftLimit) {
+					this.setBalance(0);
 					this.overdraftRecord = this.overdraftLimit;
 					log.warn("Cannot withdraw excess of overdraftLimit!");
 				} else {
-					this.overdraftRecord += amount - this.balance;
-					this.balance = 0;
+					this.overdraftRecord += amount - this.getBalance();
+					this.setBalance(0);
 				}
 			} else {
-				this.balance -= amount;
+				super.withdraw(amount);
 			}
 		}
-		log.info("Balance: " + this.balance);
+		log.info("Balance: " + this.getBalance());
 		log.info("Overdraft Record: " + this.overdraftRecord);
 	}
 }
@@ -117,16 +125,15 @@ public class AccountTest {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		CurrentAccount myAccount = new CurrentAccount(1700, new Person("Roy",25));
-		log.info(myAccount.getAccNum());
-		myAccount.withdraw(500.0);
-		log.info(myAccount.getBalance());
-		myAccount.withdraw(500.0);
-		log.info(myAccount.getBalance());
-		myAccount.withdraw(500.0);
-		log.info(myAccount.getBalance());
-		myAccount.withdraw(2300.0);
-		log.info(myAccount.getBalance());
+		Person smith = new Person("Smith", 20);
+		Person kathy = new Person("Kathy", 21);
+		SavingsAccount sa_smith = new SavingsAccount(2000, smith);
+		CurrentAccount ca_kathy = new CurrentAccount(3000, kathy);
+		sa_smith.deposit(2000);
+		ca_kathy.withdraw(2000);
+		log.info("Updated balance in Smith's savings account : " + sa_smith.getBalance());
+		log.info("Updated balance in Kathy's current account : " + ca_kathy.getBalance());
+	
 	}
 
 }
