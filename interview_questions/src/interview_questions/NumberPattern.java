@@ -14,6 +14,7 @@ public class NumberPattern {
 			even += i * 2 + " ";
 			if (counter == 3) {
 				System.out.print(even);
+				// reset counter and even string to accept new string of even numbers
 				counter = 1;
 				even = "";
 				continue;
