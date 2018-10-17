@@ -20,3 +20,5 @@ Lab 5.1, 5.2 - in eg/eis folder
 Lab 6.3 EmployeeException.java
 
 Lab 7.1 - StoreProductNames.java
+
+Lab 7.2 - StoreProductNamesInArrayList.java
