@@ -3,6 +3,9 @@ package interview_questions;
 public class NumberPattern {
 
 	// Objective: print 1 3 5 2 4 6 7 9 11 8 10 12
+	// Notice that 3 odd is followed by 3 even
+	// to get even after odd, just multiply by 2 and append to some string variable first
+	// when the odd numbers are done, print out the string variables which should consist of 3 even numbers
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
