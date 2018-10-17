@@ -2,6 +2,17 @@ package interview_questions;
 
 public class PrintCapgemini {
 
+	// objective
+	// print out "Capgemini" in increasing bursts of length 
+	// i.e
+	// "C"
+	// "Ca"
+	// "Cap"
+	// ..
+	// ..
+	// "Capgemini"
+
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String s = "Capgemini";
