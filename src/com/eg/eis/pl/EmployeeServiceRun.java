@@ -2,6 +2,7 @@ package com.eg.eis.pl;
 
 import com.eg.eis.bean.*;
 import com.eg.eis.service.*;
+import com.eg.eis.exception.*;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
 
@@ -16,6 +17,7 @@ public class EmployeeServiceRun {
 		String name = "";
 		Double salary;
 		String designation;
+		// Float ss;
 		log.info("Please key in id : ");
 		id = s.next();
 		log.info("\nPlease key in name.\nFor every space between names, just press Enter.\n"
@@ -37,8 +39,13 @@ public class EmployeeServiceRun {
 
 		s.close();
 		EmployeeService es = new EmployeeService();
-		Employee e = es.setEmployeeDetails(id, name, salary, designation);
-		es.displayEmployeeDetails(e);
+		try {
+			Employee e = es.setEmployeeDetails(id, name, salary, designation);
+			es.displayEmployeeDetails(e);
+		} catch (EmployeeException E) {
+			log.info(E.getMessage());
+		}
+		// es.displayEmployeeDetails(e);
 	}
 
 }
