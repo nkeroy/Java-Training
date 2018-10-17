@@ -6,12 +6,21 @@ import java.util.Random;
 // to print $ symbol, "\u0024"
 // to print pounds, "\u00A3"
 
+class AgeException extends Exception {
+	public AgeException(){
+		super("Age cannot be less than 15".toUpperCase());
+	}
+}
+
 class Person {
 	private String name;
 	private float age;
 	
-	public Person(String name, float age) {
+	public Person(String name, float age) throws AgeException {
 		this.name = name;
+		if (age < 15) {
+			throw new AgeException();
+		}
 		this.age = age;
 	}
 	
@@ -125,14 +134,20 @@ public class AccountTest {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Person smith = new Person("Smith", 20);
-		Person kathy = new Person("Kathy", 21);
-		SavingsAccount sa_smith = new SavingsAccount(2000, smith);
-		CurrentAccount ca_kathy = new CurrentAccount(3000, kathy);
-		sa_smith.deposit(2000);
-		ca_kathy.withdraw(2000);
-		log.info("Updated balance in Smith's savings account : " + sa_smith.getBalance());
-		log.info("Updated balance in Kathy's current account : " + ca_kathy.getBalance());
+		try {
+			Person smith = new Person("Smith", 20);
+			Person kathy = new Person("Kathy", 14);
+			SavingsAccount sa_smith = new SavingsAccount(2000, smith);
+			CurrentAccount ca_kathy = new CurrentAccount(3000, kathy);
+			sa_smith.deposit(2000);
+			ca_kathy.withdraw(2000);
+			log.info("Updated balance in Smith's savings account : " + sa_smith.getBalance());
+			log.info("Updated balance in Kathy's current account : " + ca_kathy.getBalance());
+		
+		} catch (AgeException e) {
+			log.info(e.getMessage());
+		}
+		
 	
 	}
 
