@@ -1,6 +1,7 @@
 package com.eg.eis.service;
 
 import com.eg.eis.bean.Employee;
+import com.eg.eis.exception.EmployeeException;
 
 import org.apache.log4j.Logger;
 
@@ -25,9 +26,12 @@ public class EmployeeService implements EmployeeServiceInter {
 
 	@Override
 	public Employee setEmployeeDetails(String id, String name, Double salary,
-			String designation) {
+			String designation) throws EmployeeException{
 		// TODO Auto-generated method stub
 		Employee e = new Employee();
+		if (salary < 3000) {
+			throw new EmployeeException();
+		}
 		e.setId(id);
 		e.setName(name);
 		e.setSalary(salary);
