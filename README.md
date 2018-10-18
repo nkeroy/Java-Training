@@ -22,3 +22,5 @@ Lab 6.3 EmployeeException.java
 Lab 7.1 - StoreProductNames.java
 
 Lab 7.2 - StoreProductNamesInArrayList.java
+
+Lab 7.3 - EmployeeHashMap.java (Downgraded ver)
