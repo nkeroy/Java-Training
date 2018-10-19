@@ -1,0 +1,1247 @@
+
+
+https://github.com/srinivaskolaparthi
+https://github.com/srinivaskolaparthi/SingaporeTraining
+
+
+DEVOPS=development+operations 
+microservices/ESb===>micro webservices(amazon/microsoft and all 
+social n/w sites)
+Testing===cucumber/qtp/loadrunner/selenium/manula testing
+front end====angular/emberjs/reactjs/backbone/strabbery....
+
+to learn angular===html5+javascript
+js:  front end development
+   mobile development
+      
+   js==functional js/object oriented js/prototyping js
+   
+   
+mobile====andriod/ios/bb/sencha/kony/phonegap....
+Backend====oracle/mysql/db2...
+CLOUD===aws/pcf/azure.....
+ESB===enterprise service bus(ex:mulesoft/apache camel/jboss fuse...)
+DEVOPS/esb/java
+
+SDLC=software development lifecycle
+requirement analysis-----customer/business analyst/functional consaltants
+design----technical architects
+coding---developers
+testing---testers/QA
+maintainance and implementation----operations team and support team
+
+
+
+latest tech: block chain/machine learning/big data
+
+---------------------------------------------------------------------
+Browser:software other name of browser is user agent.
+
+browser acts a mediator between end user and server.
+
+software=set of programs
+program=set if instructions for computer
+
+Sfotwares are classified into 2 types 
+1)application softwares example:microsoft office,skype.....
+2)System Softwares(s/w which is essential fr running yr pc)
+-----------------------------------------------------------------
+Java==
+author==james Gosling
+Vinod khosla
+
+sun tech day,now it is oracle tech days
+
+jse=java software development edition(for desktop development)
+jee==java enterprise edition:used for deigning enterprise app like
+  banking,insurance apps(mainly web development))
+jme/j2me==java micro/mobile edition,use jme for embedded system
+-----------------------------------------------------
+JDk==java development kit(without jdk we cannot write and run 
+java programs)
+JRE==java runtime Environment
+JVM==java virtual machine
+API==Application program interfaces
+
+Compiling:converting english instructions to bytecode
+Loader:is a tool which will place your bytecode into JVM's memory for
+execution.
+
+javac filename.java
+Runing:java filename
+
+javac Welcome.java====>Compiling==>Welcome.class====>Running
+
+class file will have bytecode.
+
+IDE:integrated development environment
+
+IDE is an editor which is used for creating java files,writing code,
+running code with all required plugins.
+Example:Eclipse,Spring STS,intelllij,netbeans....
+EClipse---so many types(luna,helio,oxygen,nitrogen,mars....)
+=============================================
+
+Java===
+class==it is combination of state and behaviour.
+Note:memory is not allocated for class.
+
+object===S-state/properties B--behaviour I--identity
+Note:Memory for class is allocated when the object gets created.
+
+Syntax:
+   accessspecifier class classname
+   {
+     properties;
+	 behaviours;
+   
+   }
+
+   Access Sprecifier : public/private/protected
+
+
+main is entry point===It is a place from where execution starts.
+
+
+Outer class can be final/public
+only in the case of inner classes class can be 
+protected/static/private.
+
+Modes: 
+  IN mode for input
+  Out Mode for output
+  Err Modefor error
+  
+Rules for main method:
+ 1)it shld be public static void
+ 2) Will allow array of Strings
+ 3)main method is userdefined method
+ 
+ "pop"+90====>pop90
+ 90+"pop"===>90pop
+ "pizza"+"hut"===>pizzahut
+ "i"+2+"dont want"===>
+ 
+ 3.56===float/double
+ 
+ by default it will be double.
+ float a=3.14;
+ roundoff
+ 
+ 2.36
+
+ 
+ Big Indian format andf little indian format
+ 
+ variables which u declare in static methods shld be initialized.
+ otherwise errors will be thrown by JVM.
+ 
+ nonstatic or instance variable.
+ 
+ 
+ classname objectname=new classname();
+ 
+ Rules 
+ =====
+ 1)Always Local variables shld be initialized.If you are not initializing 
+ default values wqill be assigned.
+ 2)For static variables and methods,no need to create object.
+ 3)Static variables can be accessed using following Syntax:
+  classname.variablename; 
+  
+  security--code level
+  app level
+  
+  DBS--hackerank
+  Goldmansack/Berkley---codility
+  
+Conditional Statements:
+----------------------
+if:
+Syntax:
+if(condition)
+{
+statements;
+}
+
+if else:
+========
+if(condition)
+{
+statements;
+}
+else
+{
+statements;
+}
+
+switch
+ternary operator
+
+To give I/p in java we are having 8 ways.
+1)use Scanner class.
+
+Syntax:
+Scanner objectname=new Scanner(System.in);
+objectname.nextInt();
+
+
+API consists of classes/interfaces and abstract methods .
+Concepts:
+---------
+What is encoding?
+Decoding
+character formats
+Http Protocol(low priority)
+what is Stream transmission?
+Asci value
+
+
+String variable=value;//variable way of declaring String
+
+String obj=new String(value);//Object way of declaring String
+
+For every class what is the base class?Object.
+Object is the base class for every calss in java.
+
+java----for,while,dowhile,foreach
+
+int a=0;
+a=a++;
+System.out.println(a);
+
+While:
+
+initialization;
+while(condition)
+{
+statements;
+
+increment/decrement;
+}
+
+1)String is immutable.If you change data in string automatically
+hashcode will change.
+2)If you want to make string mutable,then bettter to use
+Stringbuffer and Stringbuilder.
+-----------------------------------------------------
+for loop:
+==========
+
+syntax:
+for(initialization;condition;inc/decrement)
+{
+Statements;
+}
+
+Question)
+I/p :Apple
+O/p:
+No of A's:1
+No of p's:2
+No of l's:1
+No of e's:1
+
+An arrays is group of similar datatypes.
+
+Syntax:
+ datatype variablename[]=new datatype[size];
+ 
+ 
+final variables:
+================
+final is used for constants.
+
+When ever you are having multiple constants,better to declare in seperate
+class or use enum classes.
+
+Widening, also known as upcasting is a conversion that takes place in the following situations -
+Widening is taking place when a small primitive type value is automatically accommodated in a 
+bigger/wider primitive data type.
+Widening is taking place when a reference variable of a subclass is automatically accommodated 
+in the reference variable of its superclass.
+
+Note: -1 shld be handled carefully in i/o streams.
+      Null shld be handled carefully in objects.
+	  
+int a='b';
+Narrowing
+==============
+Narrowing also known as downcasting/casting is a conversion that takes place in such situations -
+Narrowing a wider/bigger primitive type value to a smaller primitive type value.
+Narrowing the superclass reference to the reference of its subclass, during inheritance.
+
+=====================================================================
+Wrapper classes:
+---------------
+
+int a=90;
+float f=3.14f;
+double d=90.899;
+java 1.5 version;
+java has introduced,wrapper classes into the market.
+
+String a="pop";
+
+converting primitive to wrapper is called as boxing.
+converting wrapper to primitive is called as unboxing.
+======================================================
+ Apache Log4j:
+=============
+
+Adding log4j capabilities:
+1)by downloading log4j.jar
+2)Add to build path or use Build tools like maven or Gradle or ant.
+By default eclipse uses Ant tool.
+
+Scaffolding:process of creating project structure
+is called as scaffolding.
+
+Log4j is logging tool for java.
+
+Advantages:
+1)For debugging
+2)for audit purpose
+3)Provides  centralized control mechanism in your projects
+
+Current Disadvantage:
+1)Heavy weight component.
+2)No storage mechanism for saving console messages in file or 
+database.
+3)No centralized control mechanism in S.O.P.
+
+in production servers,we shld reduce Sop to 98%.
+
+In java , archive can be done in 3 ways
+jar--java archive=> for destop projects
+technology:core java
+
+jar is a combination of class files and manifesto file.
+manifesto is a configuration file which is understandable by JVM.
+manifest file name shld be "MANIFEST.MF"
+
+war---web archive=>for web projects
+ex:servlets,jsp,struts,spring,jsf.....etc
+
+ear---enterprise archive===>for enterprise(example:banking) projects
+Ex:ejbs
+https://mvnrepository.com/
+
+solution for migration is use Maven or gradle.
+to use log4j  in your code follow below steps:
+1)Initialize Log4j engine
+2)Provide log4j settings in "log4j.properties" file.
+3)Use required log4j methods.
+info()
+warn()
+debug()
+critical()
+error()
+
+Hi srini--info
+clasnotfoundexception--error
+please use class names firt letter as capital----warning
+
+please save me--critical
+------------------------------------------------------------------
+
+Polymorphism:
+============
+one thing different forms.
+
+2 types---1)Overloading===>
+                constructor overloading
+				function overloading
+2)Overriding-------function overridng
+Method signature==>return type+types of parameters+no of parameters
+
+Variable arguments:
+====================
+1)can accomadate any no of arguments.
+2)variable arguments shldbe last parameter in ur function
+Example: public void add(int a,int...b);----valid
+public void add(int a,int...b,int c);----Invalid
+
+<Narrowing>>
+<<widening concepts>>
+
+Java Implements polymorphism using 2 ways:
+1)overloading
+2)Overriding
+
+Function Overloading:
+====================
+function with different behaviour and method signature but with same name.
+Note:Overloading occurs with in class.
+
+retrun: will return some value; and will return control
+Observations:
+-----------------
+1)variable arguments uses array as a datastructure internally for storing the data.
+2)Variable arguments  shlnt be the last param.
+3)array <  var-args
+
+Constructor:
+------------
+A constructor is a function whose name is same as class name;but without any return type.
+Note: 
+1)Even void is not accepted.
+2)Constructors are invoked automatically whenever you create an object.
+3)
+
+Advantage:
+==========
+ Constructors are mainly used for initializing class variables.
+
+
+IMP::::::====>SOLID PRINCIPLES<=====
+public void add()
+{   ///named block
+}
+
+{
+} //unnamed block
+
+static
+{
+}
+Observations:
+============
+1)static > unanmed> named
+2)Static blocked will be cALLED automatically.
+named and unamed blocks will be cALLED wen we create an object.
+
+abstract method:method without body is called as abstract method.
+
+Concrete Method: method with body is called as concrete method.
+
+Object Observations:
+--------------------
+1)wen ever we create object memeory will be created using new 
+and ref is created.
+2)Constructor will be called automatically.
+3)Unnamed blocks will be called automatically.
+4)Memory for Objects will be created in Heap memory.
+5)Memeory for methods will be created in method area.
+
+GC:Garbage collector
+
+
+addition of 2 no's,3no's ,4 no's using constructor and function 
+overloading.
+
+https://github.com/kolaparthisrini
+
+1)front end
+2)middleware
+3)backkend
+4)MQ server
+5)Tools(performance testing tools/monitoring tools)
+
+Monitoring tool :Jvisual vm(open source),Newrealic.....
+App dynamics is recommended tool.
+
+
+Drawback jvisual Vm:
+===================
+1)cannot monitor other programming language apps.
+2)Can use Jvisual Vm for Database monitoring.
+3)U cant use Jvisual Vm for all app and web servers.
+
+lab Exercises:
+==============
+1)Calculate simple interest using function concept.
+2)Given an array 'a' and another array 'b'.In a 35 elements are there.
+Write a program which will copy data from a to b.
+Hint:1)Go with manual.
+     2)Use Array class.
+
+3)Given a String a="Home".Transfer a to String builder via constructor.
+4)Write a java program to display below format.
+  &
+  &&
+  &&&
+  
+
+Note:Dont use Sop on 4th line.
+2)Use only log4j.
+3)need to see comments.
+4)Always class names first letter shld be Capital.
+=======================
+Note:Whenever developer try to print an object,string representation of an object is printed.It
+is because by default object will call toString() method automatically.
+2)We can override existing behaviour of toString using annotations(@Override).
+3)All annotations will start with '@' symbol.
+4)Always file name and public class name shld be same.
+5)We cannot have more than 1 public class in file.
+6)In a java program,we we have 500 java classes,then 500 
+.class file be generated.
+
+Abstract class Rules:
+========================
+1)An abstract class can extend abstract class.
+2)Object cannot be created for abstract class.Only implementation
+class can create an obj for abstract class.
+3)An abstract class  cannot be both "abstract" and "final".
+
+Interface Rules:
+================
+1)An interface can extend interface.
+2)A class can implement interface.
+3)We cannot create an Object for interface.
+4)By default all methods in interface are public and abstract.
+5)By default if we declare any variable in interface ,they are 
+"public static final".
+6)An interface cannot extend class(it can only implement).
+----------------------------------------------------------------
+TimeStamp=It is combination of date and time.
+
+>>Overriding
+>>Inheritance
+>>Exception handling
+>>Collections
+>>Maven
+======================================================
+Inheritance:
+==============
+Process of inheriting the properties from base class to child class 
+is called inheritance.
+>Inheritance is possible between classes/abstract classes and
+ interfaces.
+ >Inheritance is not possible for variable.
+ 
+ Advantages:
+ Reusuability
+ 
+ Note:
+ ----
+ 1)Child class cannot inherit the properties from base class;if the
+ property is private.Because private scope is within the class.
+ 2)Static methods cannot be inherited.But Still child class can still
+ access base class static methods(if the method is public/protected).
+ 3)Static will not involve in inheritance.
+ 4)final classes cannot be inherited.
+ 5)A final class is also called as "Sealed class".
+ 6)To override a method,
+    >There shld be relation between base and child first,
+	 second method shld ba have same method signature in base 
+   	 and child.
+    >final methods cannot be overriden.
+	>static methods cannot be overriden.
+	>Constructors cannot be Overriden.
+ ---------------------------------------------
+  This:
+ =======
+ >This shld be first line in  your constructors;but in some cases in userdefined functions.
+ >This will point out to current class;but not other class constructors.
+ >this will always points to current class variables(ie class 
+ level variable).
+ >U cannot call constructor from user defined functions.
+ >Constructors can call userdefined functions using "this".
+ Syntax:
+ this.functionname();
+>userdefined functions cannot call constructors using "this()";--Not 
+   possible
+   
+ Reflection:
+ ============
+ Reflection makes it possible to inspect classes, interfaces, fields 
+ and methods at runtime,
+ without knowing the names of the classes, methods etc. at compile time.
+ 
+ Advantages:
+ ------------
+ 1)Used in IDE Development.
+ 2)Used in Tool designing like load testing tools and Performance testing
+ tools..etc
+ 3)Mainly used in Jdbc/Jpa and servers.
+ 4)Using Reflection u can create an Object for a class.
+ 
+ Disadvantage:
+ Performance is very less.
+ 
+ ==============================================
+POJO :
+----
+Pojo stands for Plain old java Object.Any class can be a pojo class
+if it follows below rules.
+>All variables shldbe private
+>methods shld be puublic.
+>for every variable ,setter and getter methods shld be writen.
+>Pojo Classes will not have any main method.
+>Pojo classes shld not implement any interfaces.
+
+Java to table conversion
+Table to java code conversion
+
+Advantages of POJO:
+-------------------
+1)private variable in a class shld not be used directly.If accessed directly,it
+creates a security violation and chances of code injections.To get Rid 
+of this better to go with POJO.
+2)For extracting data across different layers in app development,Pojo
+can be used.
+
+
+DAO:
+-----
+>DAO stands for Data Access Object.
+>DAO is a  Design pattern.
+
+What is design pattern? 
+
+https://www.oodesign.com/
+https://martinfowler.com/articles/enterprisePatterns.html
+Sol)commonly occured problems in s/w coding can be resolved with few 
+guideliness that were provided by design  patterns.
+
+To desgin Design pattern ,Prerequisites:Good Core JAva Skills....:)
+
+Maven:
+------
+ >It is a build tool.
+ >Config file is pom.xml file
+ >Per project only 1 pom.xml files is allowed.
+ >All the necessary depenencies fr ur project are added to POM.xml file
+ in the form of <dependency>...</dependency>tags.
+
+ proxy details for a repo shld be provided in the below configuration 
+ file:setting.xml file.
+ 
+ When to use setting.xml file:
+ 1)To configure proxy details.
+ 2)To provide Corporate repo details we can use setting.xml file.
+ 3)Can be used for Profiling and other additional security parameters
+ can be configured in this file.
+ 
+Note:For entire workspace,you will have only one setting.xml file.
+Per project ,you can have only 1 POM.xml file.
+
+Exception Handling:
+=====================
+Syntax:  
+ try
+ {
+ //statements
+ }
+ catch(Exception e)
+ {
+ //statements
+ }
+
+ Syntax2:
+ try
+ {
+ ....
+ }
+ catch(Exception e)
+ {...}
+ finally {...}
+ 
+Syntax3:From jdk1.7 onwards
+try
+{...}
+catch(exceptionclass1 |exceptionclass2 object)
+{...}
+
+Syntax 4:
+try
+{}
+finally {}
+
+Note:
+>>Try shld be preceeded with catch.
+>>We cannot write any statements in between try and catch blocks.
+
+----------------------------------------------------------
+A Developer can create user defined Exception.
+Below are the Steps to create user defined Exception:
+1)Create a class and extend that class with Throwable or Exception 
+  class.
+2)If required override predefined methods witrh your logic.
+
+Serialization:
+Process of saving state,behaviour and identity of an object into some
+storage area like file/database...etc is called Serialization.
+
+Deserialization:Process of restoring your objects State,behaviour and
+identity back to active state is called as deserialization.
+
+
+Note :Any Object can be Serialized and deserialized.
+---------------------------------------------------------------
+Cloning:
+===========
+Process of replicating the copy of an existing object is called
+as clonning.
+
+To clone an Object,we need to use clone() method provided in Object class.
+ 
+Note:
+ 1)To work on cloning,your class should implement clonable interface.
+ 2)Clone() method will throw CloneNotSupportedException.As a developer
+ we need to handle the exception.
+ 
+ Collection:
+ ============
+ >Every Class in collections,will implement Serializable and Cloneable
+ interfaces.
+ >"Collection" extends "Iterable" interface which is base of collections.
+ 
+ ArrayList:
+ ----------
+=>By default jvm allocates a size of 10 to arraylist.
+=> When we try to add 11 element,automatically arraylist will be 
+   resized.
+=>ArrayList will allow duplicate values.
+=>Order is maintained when we try to display the elements from arraylist.
+=>addAll() is used for adding group of elements at a time or adding
+collection to collection.
+=>All legecy classes are syncronized.
+=>Vector is Synchronized and ArrayList is not Syncronized.
+=>Iterator is an interface in java collections through which we can
+iterate over the elements in collections.
+=>Order is maintained while iterating data.
+Syntax:
+Iterator obj=Collectionobject.iterator();
+while(obj.hasNext())
+{
+obj.next();
+}
+ensureCapacity();
+lastElement();
+firstElement();
+--------------------------------
+HashSet:
+-----
+>Default capacity is 16
+>load factor is 0.75
+>Based on load factor, collection resizing will occur.
+In our case, load factor is 75%.
+>HashSet is not synchronized and is not legacy class.
+>Order of elements is not maintained.
+>Less Memory is used.
+
+LinkedHashSet:
+--------------
+>Default capacity is 16
+>Load factor is 0.75
+>Based on load factor, collection resizing will occur.
+>LinkedHashSet is not synchronized and is not legacy class.
+> More memory is used by LinkedHashSet for storing the elements.
+> Insertion order is maintained.
+
+TreeSet:
+---------
+> No load factor
+> TreeSet is not synchronized.
+> While iterating, data will be displayed in ascending order.
+
+methods:
+highest
+lowest
+pollfirst
+polllast
+ceiling
+floor
+
+HashMap:
+--------
+>HashMap allows keys and values.
+>To insert key and value, we should use "put(key, value)" method.
+>We can insert null key and null value in Map.
+>HashMap is non legacy. So it is not synchronised.
+>Default capacity of HashMap is 16, and load factor is 0.75.
+>Order is not maintained all the time.
+> we cannot insert/add diffferent data types into collection; if inserted it wil lthrow "java.lang.ClassCastException";
+> TreeSet is slower than Hashset and LinkedHashedSet.
+> TreeSet will not allow null values. If tried, JVM will throw "NullPointerException".
+
+TreeMap:
+--------
+>>Treemap allows keys and values.
+>Null key is not allowed.
+>Order is maintained all the time.
+> It is not synchronized.
+> If tried to insert null, will not throw compile time error, will throw run time error.
+> 
+
+HashTable:
+----------
+>Hastable allows keys and values.
+>Default capacity is 11 and load factor is 0.75.
+>Will nor allow null keys;
+> It is legacy class.
+> It is synchronized; threading support is hence supported.
+>Order not predictable.
+>Base call for Hashtable is java.util.Dictionary.
+
+LinkedHashMap:
+-------------
+>Allows you to insert keys and values.
+>It will allow null keys.
+>Capacity is 16 and load factor is 0.75.
+> Order is displayed in insertion way.
+
+Properties:
+-----------
+>iostream is required as a prequisite
+> data can be transferred by byte or char, and byte is faster.
+>Legacy class
+>is used for designing i18n applications, serialization, and deserialization concepts.
+> Here key=value is treated as a Property.
+
+Deprecated method should not be used in production.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+encapsulation
+inheritance
+abstraction
+message passing
+
+Meta data:any thing which describes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
